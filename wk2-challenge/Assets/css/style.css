@@ -9,13 +9,51 @@
     color: grey;
     background-color: black;
     border-color: forestgreen;
+    border-style: dashed;
 }
-/* 
+
 header {
     text-align: var(--textalign);
-    margin-bottom: 10px;
-    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-style: none;
 }
+
+header .header_name {
+    margin-left: 0px;
+    padding-left: 20px;
+    background-color: lightgray;
+    border-style: none;
+}
+
+header .header_name h1  {
+    background-color: transparent;
+    color: green;
+    border-style: none;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+footer {
+    font-family: var(--font_code);
+    text-align: var(--textalign);
+    padding: 10px;
+    margin: 10px;
+}
+
+.row {
+    display: flex;
+    direction: horizontal;
+}
+
+.row .row_title {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/* 
 
 #intro {
     text-align: var(--textalign);
