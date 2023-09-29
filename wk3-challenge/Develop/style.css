@@ -10,11 +10,13 @@ body,
   height: 100%;
   margin: 0;
   padding: 0;
+  color: lightgrey;
+  background-color: black;
 }
 
 body {
   font-family: sans-serif;
-  background-color: #f9fbfd;
+  /* background-color: #f9fbfd; */
 }
 
 .wrapper {
@@ -31,7 +33,7 @@ header {
 }
 
 .card {
-  background-color: hsl(0, 0%, 100%);
+  /* background-color: hsl(0, 0%, 100%); */
   border-radius: 5px;
   border-width: 1px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
@@ -46,7 +48,7 @@ header {
   content: " ";
   display: block;
   width: 100%;
-  background: #e7e9eb;
+  /* background: #e7e9eb; */
   height: 2px;
 }
 
@@ -62,7 +64,7 @@ header {
   content: " ";
   display: block;
   width: 100%;
-  background: #e7e9eb;
+  /* background: #e7e9eb; */
   height: 2px;
 }
 
@@ -116,6 +118,7 @@ button[disabled] {
   border-radius: 6px;
   resize: none;
   overflow: hidden;
+  background: black;
 }
 
 @media (max-width: 690px) {
