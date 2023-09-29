@@ -49,7 +49,7 @@ header nav li {
 }
 
 #image_header {
-    background-image: url("../Assets/images/banner.png");
+    /* background-image: url("../Assets/images/banner.png"); */
     background-size: contain;
     background-position: center;
     display: flex;
@@ -94,6 +94,7 @@ header nav li {
 .link_tile {
     flex-basis: calc(50% - 10px);
     margin: 5px;
+    text-align: center;
 }
 
 footer {
