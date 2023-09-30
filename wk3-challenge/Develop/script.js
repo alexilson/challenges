@@ -53,9 +53,9 @@ function generatePassword() {
     pwLength: prompt("How long would you like the password to be? Enter a number between 8 and 128."),
     
     // ask for each of the options and store it in this object using the option name as the key
-    pwSpecialChars() {
+    pwCharsTypes() {
       for (var i = 1; i < Object.keys(this.options).length; i++) {
-        this[this.options[i].name] = prompt("Enter Y or N if you would like to include " + this.options[i].name + " characters.");
+        this[this.options[i].selected] = prompt("Enter Y or N if you would like to include " + this.options[i].name + " characters.");
       }
     },
 
@@ -67,7 +67,7 @@ function generatePassword() {
   };
   
   // Run the method to ask for the choices
-  pwCriteria.pwSpecialChars();
+  pwCriteria.pwCharsTypes();
   pwCriteria.pwCreation();
 
   return builtPw;
