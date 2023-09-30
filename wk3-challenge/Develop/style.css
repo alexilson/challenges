@@ -10,12 +10,14 @@ body,
   height: 100%;
   margin: 0;
   padding: 0;
+  /* Added these properties for dark mode. */
   color: lightgrey;
   background-color: black;
 }
 
 body {
   font-family: sans-serif;
+  /* Removed for dark mode. */
   /* background-color: #f9fbfd; */
 }
 
@@ -33,6 +35,7 @@ header {
 }
 
 .card {
+  /* Removed for dark mode. */
   /* background-color: hsl(0, 0%, 100%); */
   border-radius: 5px;
   border-width: 1px;
@@ -44,6 +47,7 @@ header {
   padding: 30px 40px;
 }
 
+/* Centered the card header */
 .card-header h2 {
   text-align: center;
 }
@@ -52,7 +56,8 @@ header {
   content: " ";
   display: block;
   width: 100%;
-  /* background: #e7e9eb; */
+  /* Removed for dark mode. */
+  /* background: #e7e9eb;*/
   height: 2px;
 }
 
@@ -68,6 +73,7 @@ header {
   content: " ";
   display: block;
   width: 100%;
+  /* Removed for dark mode. */
   /* background: #e7e9eb; */
   height: 2px;
 }
@@ -122,6 +128,7 @@ button[disabled] {
   border-radius: 6px;
   resize: none;
   overflow: hidden;
+  /* Added these properties for dark mode. */
   background: black;
   color: green;
 }
