@@ -13,12 +13,31 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
-// window.alert("Enter Length Of Passowrd")
-// var pwLength = prompt("Enter the length of password:")
-// window.alert("You have entered: " + pwLength)
-// window.alert("Do you want to include special characters?")
-// window.alert("What types of characters do you want to include?")
-// // Types: lowercase, uppercase, numeric, and/or special characters
-// window.alert("You have chosen: ")
-// window.alert("Here comes the password!!")
-// window.alert("password")
+//My code
+
+// declare function to get user input and generate pw, used in writePassword function
+function generatePassword() {
+
+  // create object with properties that will prompt for criteria and store it
+  var pwCriteria = {
+
+    // These are the choices the user will make
+    options: ["Lowercase", "Uppercase", "Numeric", "Special"], 
+
+    // Ask for length
+    pwLength: prompt("How long would you like the password to be? Enter a number between 8 and 128."),
+    
+    // ask for each of the options and store it in this object using the option name as the key
+    pwSpecialChars() {
+      for (var i = 1; i < this.options.length; i++) {
+        this[this.options[i]] = prompt("Enter Y or N if you would like to include " + this.options[i] + " characters.");
+      }
+    }
+  };
+  
+  // Run the method to ask for the choices
+  pwCriteria.pwSpecialChars();
+
+  // Return the whole object i guess?
+  return pwCriteria;
+}
