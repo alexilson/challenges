@@ -44,6 +44,10 @@ header {
   padding: 30px 40px;
 }
 
+.card-header h2 {
+  text-align: center;
+}
+
 .card-header::after {
   content: " ";
   display: block;
@@ -119,6 +123,7 @@ button[disabled] {
   resize: none;
   overflow: hidden;
   background: black;
+  color: green;
 }
 
 @media (max-width: 690px) {
